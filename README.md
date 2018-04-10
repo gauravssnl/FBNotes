@@ -4,6 +4,7 @@ Get all comments from a Facebook Note/Post by using  official facebook-sdk
 Visit 
 http://developers.facebook.com/tools/explorer/ and get your Graph API Access Token for using Facebook Graph API Explorer .Just selelct all those permission which you want to use.
 
+
 ## 1. Getting Facebook Profile Name & ID :
 
 ```python
@@ -14,6 +15,7 @@ print("Name:", account_data["name"])
 print("Profile ID: ", account_data["id"])
 ```
 
+
 ## 2. Selecting Facebook Note/Post & Getting its post-id
 
 ```python
@@ -23,6 +25,7 @@ print("Post/Note Title: ",note_data["message"])
 note_postid = note_data["id"]
 print("Post/ Note ID: ", note_postid)
 ```
+
 
 ## 3. Getting Comments & total number of comments
 
@@ -35,6 +38,7 @@ comments_count = comments_data["comments"]["summary"]["total_count"]
 print("Post/Note Comments count: ", comments_count) 
 ```
 
+
 ## 4. Getting total comments on Facebook Note/Post
 
 ```python
@@ -45,3 +49,5 @@ for comment in comments_data["data"]:
  print(cc," ", comment["message"])
  cc += 1
 ```
+
+Just use your Facebook Account API and change post/note query depending upon your requirement and date of creation of post/note.
