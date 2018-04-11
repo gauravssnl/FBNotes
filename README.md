@@ -18,7 +18,7 @@ print("Profile ID: ", account_data["id"])
 
 ## 2. Selecting Facebook Note/Post & Getting its post-id
 Note/Post id is actually combination of Facebook profile id , underscore, & last numerical part of the note URL ( profileid_lastnumericalpart). 
-If you now post id, you need not do the task of selecting post and getting its post data. Just use your post id directly in the variable note_postid.
+If you know post id, you need not perform the task of selecting post and getting its post id data. Just use your post id directly in the variable note_postid.
 
 ```python
 posts = graph.get_object("me/feed?since=10 February 2017 & until=11 February 2017")
