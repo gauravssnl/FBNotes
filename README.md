@@ -20,7 +20,9 @@ print("Profile ID: ", account_data["id"])
 Note/Post id is actually combination of Facebook profile id , underscore, & last numerical part of the note URL ( profileid_lastnumericalpart). 
 If you know post id, you need not perform the task of selecting post and getting its post id data. Just use your post id directly in the variable note_postid.
 
-Inthis case, I had created a Facebook Note on 10 February 2017, so I have used that as "since" value.You need to use your own date of creation of Note/Post. Print the returned data & then select the particular Note/Post data & its post-id.
+In my case, I had created a Facebook Note on 10 February 2017, so I have used that as "since" value.You need to use your own date of creation of Note/Post. 
+
+Print the returned data & then select the particular Note/Post data & its post-id.
 For reading comments of Facebook post/note, its post-id is required .
 
 ```python
